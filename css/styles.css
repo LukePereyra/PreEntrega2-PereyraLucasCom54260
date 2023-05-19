@@ -1,121 +1,140 @@
-*{
-    margin:0;
-    padding:0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Cormorant Garamond', serif;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-}
-img{
-    max-width: 100%;
-    width: 50px;
-}
-.logo{
-    width: 100px;
-    height: 30px;
-    float: left;
-}
-.navegacion{
-    display:flex;
-    background-color: black;
-    flex-direction:row;
-    justify-content:space-around;
-    padding: 15px
-
-}
-.navegacion{
-    margin-left: 25px;
-    list-style: none;
-
-}
-.navegacion a{
-    text-decoration: none;
-    color: bisque;
-}
-.bienvenido{
-    display: flex;
-    border: double 5px;
-    justify-content: center;
-    margin-top: 30px;
-
-}
-header, footer{
-    background-color: black;
-}
-#principal{
-    background-image: url(../img/Fondo.jpeg);
-    background-position:center center;
-    height: 1800px;
-    background-attachment: fixed;
-    background-size: cover;
+  font-family: "Amatic SC", cursive;
+  font-family: "Cormorant Garamond", serif;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
 }
 
-.beneficios{
-    list-style: none;
-    margin-top: 15px;
+img {
+  max-width: 100%;
+  width: 50px;
 }
-.texto-bienvenida{
-    display:flex;
-    margin-top: 40px;
-    justify-content: center;
 
+.logo {
+  width: 100px;
+  height: 30px;
+  float: left;
 }
-.regalate{
-    display: flex;  
-    justify-content: center;
-    margin-top: 30px;
-}
-.reserva{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.ig{
-    display:flex;
-    justify-content: center;
-    background-color: black;
-    border-image: auto;
-    padding: 5px;
 
+.navegacion {
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
 }
-.dai{
-    justify-content: center;
-    text-align: center;
-    background-color: bisque;
+
+.navegacion {
+  margin-left: 25px;
+  list-style: none;
 }
-.dai img{
-    width: 300px;
+
+.navegacion a {
+  text-decoration: none;
+  color: bisque;
 }
-.turno{
-    display:flex;
-    justify-content: center;
+
+.bienvenido {
+  display: flex;
+  border: double 5px;
+  justify-content: center;
+  margin-top: 30px;
 }
-#productos{
-    background-color: bisque fill ;
-    padding: 12px;
-    margin-left: 20px;
+
+header, footer {
+  background-color: black;
 }
-#productos img{
-    width: 300px;
-    align-items: center;
+
+#principal {
+  background-image: url(../img/Fondo.jpeg);
+  background-position: center center;
+  height: 1800px;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+.beneficios {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.texto-bienvenida {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.regalate {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.reserva {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ig {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-image: auto;
+  padding: 5px;
+}
+
+.dai {
+  justify-content: center;
+  text-align: center;
+  background-color: bisque;
+}
+
+.dai img {
+  width: 300px;
+}
+
+.turno {
+  display: flex;
+  justify-content: center;
+}
+
+#productos {
+  background-color: bisque fill;
+  padding: 12px;
+  margin-left: 20px;
+}
+
+#productos img {
+  width: 300px;
+  align-items: center;
+}
+
 /*aunque cambie el tamaño de las imagenes estas no cambian supongo que por el "img" que tengo arriba pero no pude cambiarlo sin destartalar todo lo otro*/
-.como{
-    display:list-item;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: bisque;
+.como {
+  display: list-item;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: bisque;
 }
-.muestra{
-    margin: 20px;
-    display: flex;
-    align-content: center;
-    justify-content:space-around;
+
+.muestra {
+  margin: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
 }
-.muestra img{
-    width: 250px;
+
+.muestra img {
+  width: 250px;
 }
+
+/*# sourceMappingURL=styles.css.map */
