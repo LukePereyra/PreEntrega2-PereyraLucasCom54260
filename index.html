@@ -17,27 +17,35 @@
 <body>
     <div id="principal">
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Captura de pantalla 2023-04-14 212410.png" alt="Logo Espacio para vos"></li>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a href="index.html" class="logo">
+                <img src="img/Captura de pantalla 2023-04-14 212410.png" alt="logo">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Tu espacio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/como.html">Cómo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/con-que.html">Con qué</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/cuando.html">Cuándo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/quienes.html">Quiénes</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-                <nav>
-                    <ul class="navegacion">
-                        <li>
-                            <a href="pages/quienes.html">Quiénes</a>
-                        </li>
-                        <li>
-                            <a href="pages/como.html">Cómo</a>
-                        </li>
-                        <li>
-                            <a href="pages/con-que.html">Con qué</a>
-                        </li>
-                        <li>
-                            <a href="pages/cuando.html">Cuándo</a>
-                        </li>
-                    </ul>
-                </nav>
+          </nav>
             </div>
         </header>
             <h1 class="bienvenido">
@@ -66,12 +74,30 @@
 
                 Veni, este espacio es para vos </li>
         </ul>
-    <div class="muestra">
-        <img src="img/carta1.jpeg" alt="carta">
-        <img src="img/cliente1.jpeg" alt="cliente">
-        <img src="img/cliente2.jpeg" alt="cliente2">
-        <img src="img/carta2.jpeg" alt="carta2">
-    </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carta1.jpeg" class="d-block w-100" alt="carta1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/cliente1.jpeg" class="d-block w-100" alt="cliente1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carta2.jpeg" class="d-block w-100" alt="carta2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/cliente2.jpeg" class="d-block w-100" alt="cliente2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 </div>
     <footer>
         <div class="ig">
