@@ -174,4 +174,8 @@ footer {
   justify-content: center;
 }
 
+.d-block.w100 img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
