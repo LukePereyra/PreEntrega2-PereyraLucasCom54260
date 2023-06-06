@@ -1,0 +1,22 @@
+.turno{
+    @include flex-center;
+    color: $colorsecundario;
+}
+
+form{
+    @include flex-center;
+    text-align: center;
+    gap: 25px;
+    
+    .label{
+        @include flex-center;
+    }
+    .input{
+        @include flex-center;}
+}
+
+.turno input:focus {
+    width: 300px;
+
+}
+

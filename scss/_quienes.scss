@@ -1,0 +1,31 @@
+#dai a {
+    @include flex-center;
+    text-decoration: none;
+    gap: 30px;
+    margin: 30px 60px 30px 30px;
+    transition: all .7s;
+    color: bisque;
+}
+#dai a:hover {
+    background-color: black;
+}
+
+.imgdai {
+    @include flex-row;
+    width: 300px;
+    max-height: 400px;
+    margin: auto;
+    gap: 10px;
+}
+.manos{  
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px!important  ;
+}
+#dai img{
+    @include flex-row;
+    max-height: 300px;
+}
+@media (max-width: 500px) {#header img{
+    @include flex-center;
+}}

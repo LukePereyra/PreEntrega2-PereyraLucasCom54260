@@ -1,25 +1,59 @@
 body{
     font-family: 'Amatic SC', cursive;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;    
-    background-color: bisque;
-    background-image: url(../img/Fondo.jpeg);
-    background-position:center center;
-    height: 1800px;
-    background-attachment: fixed;
+    font-size: $fuente-media;
+    height: 100vh;    
+    background-image: url(../img/fondo2.jpeg)!important;
+    background-position:center;
+    // height: 1800px;
+    background-attachment:fixed;
     background-size: cover;
 }
-
-.container-fluid{
-    background-color: black;
-}
-.nav-link, .nav-link.active, .navbar-nav .nav-link.active{
-    color: bisque;
-    
-}
 img{
-    width: 70px;
+    max-width: 100%;
 }
+
+@media (min-width: 992px) {#header{
+    padding: 6 10;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $colorprimario ;
+
+}
+.logo {
+    position: absolute;
+    margin: 0;
+}
+#barra {
+    position: relative;
+}
+}
+.carousel img{
+    margin:auto;
+    width: 400px;
+    height: 600px;
+}
+ .container-fluid{
+     background-color: black;
+     display: block;
+ }
+ .nav-link, .nav-link.active, .navbar-nav .nav-link.active a{
+     color: $colorsecundario;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+
+     &:hover {         color: $colorterciario;
+     }
+ }
+
+.logo img{
+    width: 40px;
+}
+
 #navbarNav{
     padding: 0%;
 }
@@ -27,66 +61,48 @@ img{
     padding:0;
 }
 .navbar-toggler{
-    color: white;
-    background-color: bisque;
+    color: $colorterciario;
+    background-color:$colorsecundario;
 }
 h1, h2{
-    color: bisque;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-center;
+    color: $colorsecundario;
     padding: 20px;
-    font-size: 40px;
-    margin: 40px 40px 40px 40px;
+    font-size: $fuente-grande;
+    margin: 100px 10px;
     text-align: center;
-    
 }
 p{
-    font-size: 20px;
-    color: bisque;
+    font-size: $fuente-media;
+    color: $colorsecundario;
     text-align: center;
 }
 .regalate{
     text-decoration:solid;
-    color: white;
-    display: flex;
-    justify-content: center;
+    color: $colorterciario;
+    @include flex-center;
     margin: 15px;
 }
 .beneficios{
-    color: bisque;
+    color: $colorsecundario;
     text-align: center;
     list-style: none;
 }
-.carousel-item, .carousel-item{
-    width: 100%;
-    size: cover;
-}
+
 footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-center;
     margin-top: 25px;
 }
-.como{
-    color: bisque;
-    text-align: center;
-    padding: 20px;
+
+footer{
+    background-color: black;
 }
-.accordion-item, .acordion-header{
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    text-size-adjust: 25px  ;
+footer img{
+    width: 40px;
+
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+ul{
+    padding-left: 0%;
 }
-.w-100{
-    padding: 20px 20px;
-    max-height: 600px;
-}
+
+//no me hizo falta usar @extend ya que usé más mixins y no tuve la necesidad y no queria poner por ponerlo//

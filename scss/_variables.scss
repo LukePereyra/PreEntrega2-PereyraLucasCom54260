@@ -4,8 +4,8 @@ $desktopXG: 1200px;
 
 $fuente-principal: 'Amatic SC', cursive; 
 $fuente-chica: 14px;
-$fuente-media: 20px;
-$fuente-grande: 60px;
+$fuente-media: 25px;
+$fuente-grande: 70px;
 $fuente-muygrande: 80px;
 
 $colorprimario: #000000;
@@ -17,3 +17,15 @@ $espacio-chico: 20px;
 $espacio-medio: 40px;
 $espacio-grande: 60px;
 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+.accordion-item {
+    background-color: black;
+    transition: all .3s;
+    margin: 0px 15px 0px 15px;
+}
+.accordion-body {
+    color: bisque;
+}
+.accordion-button.collapsed{
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.accordion-button.collapsed h2{
+    margin: 100px 0px;
+}
